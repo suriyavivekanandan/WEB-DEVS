@@ -1,0 +1,26 @@
+
+<script>
+    let n = 153;
+    let q = n; 
+    let i = 0;
+    let k=q;
+
+    while (n !== 0) {
+        n =Math.floor(n / 10);
+        i++;
+    }
+
+    let b = 0; 
+    while (q !== 0) {
+        let a = q % 10;
+        b =b+Math.pow(a, i);
+        q = Math.floor(q / 10);
+    }
+    
+    if(k==b){
+        document.write("Amstrong");
+         }
+         else{
+         document.write(" Not Amstrong");
+         }
+</script>

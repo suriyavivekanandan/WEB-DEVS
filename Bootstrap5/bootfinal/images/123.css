@@ -1,0 +1,62 @@
+.nav-link{
+    
+    color: black;
+    font-size: 20px;
+}
+.navbar{
+    background-color: gray;
+}
+.nav-link:hover{
+
+    color: rgb(94, 146, 223);
+}
+.btn{
+    background-color: aqua;
+    border:1px solid black;
+}
+.btn:hover{
+    background-color: brown;
+}
+.hero-bg{
+    opacity: 25%;
+}
+.hero-head{
+    color: aquamarine;
+
+
+}
+
+
+.hero-head2{
+    color: blue;
+}
+.hero-services-img{
+    width: 700px;
+    
+
+}
+.hero-head, .hero-head2,.btn,.hero-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .hero-services-img {
+    animation: zoomInOut 1s;
+  }
+  
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  

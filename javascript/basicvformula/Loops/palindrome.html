@@ -1,0 +1,33 @@
+<!-- <script>
+    let n, a = 0, b=0 ,c=0;
+    n = parseInt(prompt("Enter the value of n"));
+    while (n!= 0) {
+            a=n%10;
+            b=b*10+a;
+            n=Math.floor(n/10);
+        }
+        c=c+b;
+        if(n==c){
+            document.write("Palindrome");
+        }
+        else{
+            document.write("Not Palindrome");
+        }
+</script> -->
+<script>
+    let n, a = 0, b = 0, c = 0;
+    n=parseInt(prompt("Enter the value of n"));
+  let q=n;
+    while (n != 0) {
+        a = n % 10;
+        b = b * 10 + a;
+        n = Math.floor(n / 10);
+    }
+    c = c + b;
+    document.write(c);
+    if (c==q) {
+        document.write("Palindrome");
+    } else {
+        document.write("Not Palindrome");
+    }
+</script>
